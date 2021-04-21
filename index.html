@@ -47,13 +47,29 @@
 		top: 1%;
 		height: 6%;
 	  }
+		#ar-button {
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  bottom: 32px;
+  padding: 0px 16px 0px 40px;
+  font-family: Roboto Regular, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  color: black;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 18px;
+  border: 1px solid black;
+}
 	</style>
 	<div class="background-demo">
 		<span style="position: absolute; ; text-align: center; font-size: 70px; top:50%;">
 		</span>
   		<model-viewer camera-controls autoplay src="models/example42.glb" ar ar-modes="webxr scene-viewer quick-look"
 		ar-scale="auto" auto-rotate camera-controls alt="model" ios-src="models/example42.usdz">
-			<button slot="ar-button">
+			<button slot="ar-button" id="ar-button">
   				Открыть в AR
 			</button>
 		</model-viewer>
